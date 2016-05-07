@@ -11,8 +11,10 @@ email: sanskarmodi97@gmail.com
 description: I am weird :P
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: 
+twitter_username: sanskar-modi
 github_username:  sanskar-modi
+facebook_username: sanskar.modi
+linkedin_username: sanskar-modi
 
 # Build settings
 markdown: kramdown
