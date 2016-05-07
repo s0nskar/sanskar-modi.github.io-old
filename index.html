@@ -19,8 +19,9 @@ layout: default
     <div class="postExt">
    {{ post.content | strip_html | truncatewords:20}}
     </div>
+    <p><a href="{{post.url}}#disqus_thread"></a></p>
   </div>
-
+  <script id="dsq-count-scr" src="//rmaniac.disqus.com/count.js" async></script>
 
   {% endfor %}
   <!--<ul class="post-list">
