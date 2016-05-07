@@ -6,14 +6,14 @@
 <center>  {{site.description}} </center>
 </div>
 <div class="wrapper">
-  <div class="trigger site-navigation">
-    <a class="page-link" href="/index.html">HOME</a><span class="exclamationMark">/</span>
+  <center class="trigger site-navigation">
+    <a class="page-link" href="/index.html">HOME</a>
 
     {% for sitePage in site.pages %}
     {% if sitePage.title %}
-
-    <a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a><span class="exclamationMark">/</span>
+    <span class="exclamationMark">|</span>
+    <a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
     {% endif %}
     {% endfor %}
-  </div>
+  </center>
 </div>

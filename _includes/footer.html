@@ -7,7 +7,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list footer-content">
-          <li>Made with <i class="fa fa-heart"></i> on <a href="jekyll.com"><span style="color:black">{ { Jekyll } }</a></span></li>
+          <li>Made with <i class="fa fa-heart" style="color:red;"></i> by <a href="jekyll.com"><span style="color:black">{ { maniac } }</a></span></li>
 
 
         </ul>
@@ -17,30 +17,29 @@
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
-            {% include icon-github.html username=site.github_username %}
+            {% include social.html site="github" username=site.github_username %}
           </li>
           {% endif %}
 
           {% if site.twitter_username %}
           <li>
-            {% include icon-twitter.html username=site.twitter_username %}
+            {% include social.html site="twitter" username=site.twitter_username %}
           </li>
           {% endif %}
 
           {% if site.facebook_username %}
           <li>
-            {% include icon-twitter.html username=site.facebook_username %}
+            {% include social.html site="facebook" username=site.facebook_username %}
           </li>
           {% endif %}
 
           {% if site.linkedin_username %}
           <li>
-            {% include icon-twitter.html username=site.linkedin_username %}
+            {% include social.html site="linkedin" username=site.linkedin_username %}
           </li>
           {% endif %}
         </ul>
       </div>
-
       <div class="footer-col footer-col-3 site-description">
         <p>{{ site.description }}</p>
       </div>
